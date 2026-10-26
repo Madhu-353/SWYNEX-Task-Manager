@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 // Backend API connected to MongoDB Atlas
-const API_URL = '/api/tasks'
+const API_URL = 'https://swynex-task-manager.onrender.com/api/tasks'
 
 function App() {
   const [tasks, setTasks] = useState([])
