@@ -9,11 +9,7 @@ const Task = require('./models/Task');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({
-  origin: 'https://lifeless-superstition-wr4rxrr4p9gx25wx-5173.app.github.dev',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type']
-}));
+app.use(cors());
 app.use(express.json());
 
 // Basic route
